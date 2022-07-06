@@ -156,5 +156,5 @@ p = df_avg %>%
         axis.text.x = element_blank())
 
 ggsave(paste0(gsub(" ","_", serie_title), ".png"), 
-       width = 15, height = 9, device = cairo_pdf) 
+       width = 15, height = 9) 
 
