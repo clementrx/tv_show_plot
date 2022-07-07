@@ -14,9 +14,12 @@ notes.
 
 ## How it works ?
 
-You only have to fill : - serie\_title : For PNG name and plot name - s
-: For number of seasons - code : Find the code corresponding to your TV
-show on [IMDB](https://www.imdb.com/?ref_=nv_home)
+You only have to fill :
+
+-   **serie\_title** : For PNG name and plot name
+-   **s** : For number of seasons
+-   **code** : Find the code corresponding to your TV show on
+    [IMDB](https://www.imdb.com/?ref_=nv_home)
 
 ``` r
 # Tv show title
@@ -29,6 +32,8 @@ s = 10
 # example https://www.imdb.com/title/tt0279600/episodes?ref_=tt_eps_sm
 code = 'tt0279600'
 ```
+
+I will web scrap notes and votes by episodes and seasons.
 
 Then run the code to plot and see the rating of you favorite TV show !
 

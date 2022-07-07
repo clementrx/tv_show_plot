@@ -28,9 +28,10 @@ I re-use his vizualisation, to plot a TV show rating from his IMDB notes.
 ## How it works ?
 
 You only have to fill :
-  - serie_title : For PNG name and plot name
-  - s : For number of seasons
-  - code : Find the code corresponding to your TV show on [IMDB](https://www.imdb.com/?ref_=nv_home)
+
+  - **serie_title** : For PNG name and plot name
+  - **s** : For number of seasons
+  - **code** : Find the code corresponding to your TV show on [IMDB](https://www.imdb.com/?ref_=nv_home)
 
 ```{r, eval=FALSE}
 # Tv show title
@@ -43,6 +44,8 @@ s = 10
 # example https://www.imdb.com/title/tt0279600/episodes?ref_=tt_eps_sm
 code = 'tt0279600'
 ```
+
+I will web scrap notes and votes by episodes and seasons.
 
 Then run the code to plot and see the rating of you favorite TV show !
 
