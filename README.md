@@ -5,8 +5,9 @@
 
 **Authors:** [Clément Rieux](https://github.com/clementrx)
 
-Thanks to [z3tt](https://github.com/z3tt) for his TidyTuesday
-[plot](https://github.com/z3tt/TidyTuesday/blob/main/R/2020_12_TheOffice.Rmd).
+Thanks to [z3tt](https://github.com/z3tt) for his TidyTuesday [plot from
+The
+Office](https://github.com/z3tt/TidyTuesday/blob/main/R/2020_12_TheOffice.Rmd).
 
 I re-use his vizualisation, to plot a TV show rating from his IMDB
 notes.
@@ -36,3 +37,24 @@ Then run the code to plot and see the rating of you favorite TV show !
 ### Smallville
 
 ![./plot/Smallville.png](https://github.com/clementrx/tv_show_plot/blob/main/plot/Smallville.png)
+
+### Peaky Blinders
+
+![./plot/Peaky\_Blinders.png](https://github.com/clementrx/tv_show_plot/blob/main/plot/Peaky_Blinders.png)
+
+### Stranger Things
+
+![./plot/Stranger\_Things.png](https://github.com/clementrx/tv_show_plot/blob/main/plot/Stranger_Things.png)
+
+### Breaking Bad
+
+![./plot/Breaking\_Bad.png](https://github.com/clementrx/tv_show_plot/blob/main/plot/Breaking_Bad.png)
+\#\#\# Game of Thrones
+
+![./plot/Game\_of\_Thrones.png](https://github.com/clementrx/tv_show_plot/blob/main/plot/Game_of_Thrones.png)
+
+### The Simpsons
+
+![./plot/Simpsons.png](https://github.com/clementrx/tv_show_plot/blob/main/plot/Simpsons.png)
+
+### Your Turn !

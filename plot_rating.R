@@ -6,6 +6,7 @@ library(stringi)
 library(RColorBrewer)
 library(cowplot)
 library(showtext)
+library(ggtext) # for seasons > 15
 
 # Tv show title
 serie_title = 'Smallville'
@@ -96,6 +97,9 @@ df_lines <-
     x_group = if_else(type == "end_x" & x == max(x), x_group + .1, x_group)
   )
 
+nb.cols <- s
+mycolors <- colorRampPalette(brewer.pal(8, "Paired"))(nb.cols)
+
 p = df_avg %>% 
   ggplot(aes(episode_mod, note)) +
   geom_hline(data = tibble(y = 7:11),
@@ -122,11 +126,16 @@ p = df_avg %>%
                  color = after_scale(colorspace::darken(color, .2))),
              show.legend = FALSE,
              fill = NA,
-             # family = "Special Elite",
-             # fontface = "bold",
              label.padding = unit(.2, "lines"),
              label.r = unit(.25, "lines"),
              label.size = .5)  +
+  # When large number of seasons
+  # geom_richtext(aes(x = mid, y = 10, label=glue::glue(" Saison {saison} "),
+  #                   color = saison, 
+  #                   color = after_scale(colorspace::darken(color, .2))),
+  #               show.legend = FALSE,
+  #               fill = NA,
+  #               angle = 45) + 
   scale_x_continuous(expand = c(.015, .015)) +
   scale_y_continuous(expand = c(.03, .03),
                      limits = c(6.5, 10.5),
@@ -135,7 +144,7 @@ p = df_avg %>%
   # scale_color_manual(values = c("#486090", "#D7BFA6", "#6078A8", "#9CCCCC", 
   #                               "#7890A8"),
   #                    guide = F) +
-  scale_color_brewer(palette = "Paired", guide = "none") +
+  scale_color_manual(values = mycolors, guide = "none") +
   scale_size_binned(name = "Votes par épisode",
                     range = c(.3, 6),
                     labels=function(x) format(x, big.mark = " ", scientific = FALSE)) +
