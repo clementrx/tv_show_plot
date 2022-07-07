@@ -66,6 +66,7 @@ Then run the code to plot and see the rating of you favorite TV show !
 ### Breaking Bad 
 
 ![./plot/Breaking_Bad.png](https://github.com/clementrx/tv_show_plot/blob/main/plot/Breaking_Bad.png)
+
 ### Game of Thrones 
 
 ![./plot/Game_of_Thrones.png](https://github.com/clementrx/tv_show_plot/blob/main/plot/Game_of_Thrones.png)
