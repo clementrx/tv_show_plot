@@ -1,6 +1,5 @@
-# Chargement des library #####
+# library #####
 library(rvest) 
-library(stringr) 
 library("tidyverse")
 library(data.table)
 library(stringi)
@@ -8,19 +7,19 @@ library(RColorBrewer)
 library(cowplot)
 library(showtext)
 
-# titre de la série
+# Tv show title
 serie_title = 'Smallville'
 
-# nombre de saisons
+# Seasons
 s = 10
 
-# code de la série à retrouve 
-# exemple https://www.imdb.com/title/tt0279600/episodes?ref_=tt_eps_sm
+# Tv show code
+# example https://www.imdb.com/title/tt0279600/episodes?ref_=tt_eps_sm
 code = 'tt0279600'
 
 table = data.frame()
 
-# web scrap des informations
+# web scraping
 for(i in 1:s){
   
   url = paste0("https://www.imdb.com/title/",code,"/episodes?season=",i
@@ -141,7 +140,6 @@ p = df_avg %>%
                     range = c(.3, 6),
                     labels=function(x) format(x, big.mark = " ", scientific = FALSE)) +
   ggtitle(serie_title) +
-  # xlab("") + ylab("Note") +
   labs(x = "", y = "Note",
        caption = "Visualization by Clément Rieux") +
   guides(size = guide_bins(show.limits = T,
